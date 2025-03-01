@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-Items vs Align-Content</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            height: 300px;
+            margin: 20px auto;
+            border: 2px solid black;
+            background-color: lightgray;
+        }
+
+        /* Example 1: Align-Items (affects individual items) */
+        .align-items-example {
+            align-items: center; /* Aligns items in the center of the container */
+        }
+
+        /* Example 2: Align-Content (affects row spacing) */
+        .align-content-example {
+            /* align-items: center; */
+            /* align-content: center; */
+        }
+
+        .item {
+            width: 80px;
+            height: 80px;
+            background-color: orange;
+            text-align: center;
+            line-height: 80px;
+            font-weight: bold;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Example 1: align-items (Affects Each Item's Position in a Row)</h2>
+    <div class="container align-items-example">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+
+    <h2>Example 2: align-content (Affects Row Spacing)</h2>
+    <div class="container align-content-example">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+
+</body>
+</html>
